@@ -146,7 +146,7 @@ export default function Index() {
           color: '#8b949e',
           lineHeight: 1.5,
         }}>
-          React Router v7 running on Zerops SSR - Node.js at runtime.
+          React Router v8 running on Zerops SSR — Node.js at runtime.
         </p>
 
         {/* Status indicator badge */}
@@ -184,7 +184,7 @@ export default function Index() {
           borderRadius: '10px',
           padding: '0 1.25rem',
         }}>
-          <Row label="Framework" value="React Router v7" />
+          <Row label="Framework" value="React Router v8" />
           <Row label="Version" value={`v${version}`} />
           <Row label="Environment" value={environment} />
           <Row label="Time" value={time} />

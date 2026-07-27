@@ -1,12 +1,12 @@
-# React Router v7 SSR Hello World Recipe App
+# React Router v8 SSR Hello World Recipe App
 
 <!-- #ZEROPS_EXTRACT_START:intro# -->
-A minimal SSR application built with React Router v7, connecting to a PostgreSQL database on Zerops.
+A minimal SSR application built with React Router v8, connecting to a PostgreSQL database on Zerops.
 Demonstrates server-side rendering, idempotent database migrations, and a zero-downtime production
 deploy pipeline.
 <!-- #ZEROPS_EXTRACT_END:intro# -->
 
-Used within [React Router v7 SSR Hello World recipe](https://app.zerops.io/recipes/react-router-ssr-hello-world) for [Zerops](https://zerops.io) platform.
+Used within [React Router v8 SSR Hello World recipe](https://app.zerops.io/recipes/react-router-ssr-hello-world) for [Zerops](https://zerops.io) platform.
 
 ⬇️ **Full recipe page and deploy with one-click**
 
@@ -23,7 +23,7 @@ Used within [React Router v7 SSR Hello World recipe](https://app.zerops.io/recip
 The main application configuration file you place at the root of your repository. It tells Zerops how to build, deploy, and run your application.
 
 ```yaml
-# React Router v7 SSR hello world recipe for Zerops.
+# React Router v8 SSR hello world recipe for Zerops.
 # Two setups: 'prod' for production/stage deployments,
 # 'dev' for SSH-based interactive development.
 zerops:
@@ -40,7 +40,7 @@ zerops:
         - npm ci
         - npm run build
       deployFiles:
-        # React Router v7 is NOT self-contained - the server bundle
+        # React Router v8 is NOT self-contained - the server bundle
         # requires node_modules at runtime (unlike Nitro-based
         # frameworks that bundle all deps into a single output dir).
         - build
@@ -87,7 +87,7 @@ zerops:
         DB_PORT: ${db_port}
         DB_USER: ${db_user}
         DB_PASS: ${db_password}
-      start: npx react-router-serve build/server/index.js
+      start: npm run start
 
   - setup: dev
     build:

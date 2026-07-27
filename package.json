@@ -1,7 +1,22 @@
 {
-  "name": "react-router-ssr-hello-world",
+  "name": "react-router-ssr-hello-world-app",
+  "version": "1.0.0",
+  "description": "React Router v8 SSR app with PostgreSQL on Zerops nodejs@22",
+  "author": "Zerops",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zerops-recipe-apps/react-router-ssr-hello-world-app"
+  },
+  "homepage": "https://github.com/zerops-recipe-apps/react-router-ssr-hello-world-app",
+  "bugs": {
+    "url": "https://github.com/zerops-recipe-apps/react-router-ssr-hello-world-app/issues"
+  },
   "private": true,
   "type": "module",
+  "engines": {
+    "node": ">=22.0.0"
+  },
   "scripts": {
     "build": "react-router build",
     "dev": "react-router dev",
@@ -9,21 +24,28 @@
     "typecheck": "react-router typegen && tsc"
   },
   "dependencies": {
-    "@react-router/node": "^7.5.0",
-    "@react-router/serve": "^7.5.0",
-    "pg": "^8.13.3",
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0",
-    "react-router": "^7.5.0",
-    "isbot": "^5"
+    "@react-router/node": "8.3.0",
+    "@react-router/serve": "8.3.0",
+    "isbot": "5.2.1",
+    "pg": "8.22.0",
+    "react": "19.2.8",
+    "react-dom": "19.2.8",
+    "react-router": "8.3.0"
   },
   "devDependencies": {
-    "@react-router/dev": "^7.5.0",
-    "@types/node": "^22.0.0",
-    "@types/pg": "^8.11.10",
-    "@types/react": "^19.0.0",
-    "@types/react-dom": "^19.0.0",
-    "typescript": "^5.7.0",
-    "vite": "^6.0.0"
-  }
+    "@react-router/dev": "8.3.0",
+    "@types/node": "26.1.1",
+    "@types/pg": "8.20.0",
+    "@types/react": "19.2.17",
+    "@types/react-dom": "19.2.3",
+    "typescript": "7.0.2",
+    "vite": "8.1.5"
+  },
+  "keywords": [
+    "react-router",
+    "zerops",
+    "ssr",
+    "postgresql",
+    "vite"
+  ]
 }
