@@ -1,4 +1,4 @@
-# React Router v7 SSR hello world recipe for Zerops.
+# React Router v8 SSR hello world recipe for Zerops.
 # Two setups: 'prod' for production/stage deployments,
 # 'dev' for SSH-based interactive development.
 zerops:
@@ -15,7 +15,7 @@ zerops:
         - npm ci
         - npm run build
       deployFiles:
-        # React Router v7 is NOT self-contained - the server bundle
+        # React Router v8 is NOT self-contained - the server bundle
         # requires node_modules at runtime (unlike Nitro-based
         # frameworks that bundle all deps into a single output dir).
         - build
@@ -62,7 +62,7 @@ zerops:
         DB_PORT: ${db_port}
         DB_USER: ${db_user}
         DB_PASS: ${db_password}
-      start: npx react-router-serve build/server/index.js
+      start: npm run start
 
   - setup: dev
     build:
