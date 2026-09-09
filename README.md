@@ -29,7 +29,7 @@ The main application configuration file you place at the root of your repository
 zerops:
   - setup: prod
     build:
-      base: nodejs@22
+      base: nodejs@24
       # Alpine lacks the glibc Rollup binary needed by Vite/React Router.
       # Ubuntu provides the glibc variant. Runtime deps (pg,
       # react-router-serve) are pure JS - they run fine on the
@@ -64,7 +64,7 @@ zerops:
           path: /
 
     run:
-      base: nodejs@22
+      base: nodejs@24
       initCommands:
         # Migrations run here (not buildCommands) so schema changes
         # deploy atomically with the application code. If the deploy
@@ -91,7 +91,7 @@ zerops:
 
   - setup: dev
     build:
-      base: nodejs@22
+      base: nodejs@24
       # Ubuntu for richer SSH toolset - curl, vim, git all available
       # without extra prepareCommands.
       os: ubuntu
@@ -106,7 +106,7 @@ zerops:
         - node_modules
 
     run:
-      base: nodejs@22
+      base: nodejs@24
       os: ubuntu
       initCommands:
         # Same migration as prod - database is ready when you SSH in.

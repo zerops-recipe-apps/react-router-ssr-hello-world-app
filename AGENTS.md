@@ -1,12 +1,12 @@
 # react-router-ssr-hello-world-app
 
-React Router v8 SSR app with PostgreSQL on Zerops nodejs@22, served by `react-router-serve`.
+React Router v8 SSR app with PostgreSQL on Zerops nodejs@24, served by `react-router-serve`.
 
 ## Zerops service facts
 
 - HTTP port: dev `3000` (`npm run dev`) / prod `3000` (Node runtime)
 - Siblings: `db` (PostgreSQL) — env: `DB_HOST`, `DB_PORT`, `DB_USER`, `DB_PASS`, `DB_NAME`
-- Runtime base: dev `nodejs@22` / prod `nodejs@22`
+- Runtime base: dev `nodejs@24` / prod `nodejs@24`
 
 ## Zerops dev
 
